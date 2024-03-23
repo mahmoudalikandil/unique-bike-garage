@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Workshop Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Motorcycle Workshop Checklist</h1>
+    </header>
+    <main>
+        <form id="checklist-form">
+            <div class="column" style="display: inline-grid;">
+                <div class="input-container">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="input-container">
+                    <label for="vin">VIN:</label>
+                    <input type="text" id="vin" name="vin">
+                </div>
+                <div class="input-container">
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model">
+                </div>
+            </div>
+            <div class="column" style="display: inline-grid;">
+                <div class="input-container">
+                    <label for="year">Year:</label>
+                    <input type="text" id="year" name="year">
+                </div>
+                <div class="input-container">
+                    <label for="make">Make:</label>
+                    <input type="text" id="make" name="make">
+                </div>
+                <div class="input-container">
+                    <label for="bodystyle">Body St.:</label>
+                    <input type="text" id="bodystyle" name="bodystyle">
+                </div>
+            </div>
+            <div class="column" style="display: inline-grid;">
+                <div class="input-container">
+                    <label for="mileage">Mileage:</label>
+                    <input type="text" id="mileage" name="mileage">
+                </div>
+                <div class="input-container">
+                    <label for="transmission">Trans:</label>
+                    <input type="text" id="transmission" name="transmission">
+                </div>
+                <div class="input-container">
+                    <label for="engine">Engine:</label>
+                    <input type="text" id="engine" name="engine">
+                </div>
+            </div>
+            <button type="submit">Generate PDF</button>
+        </form>
+    </main>
+</body>
+</html>

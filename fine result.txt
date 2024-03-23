@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Workshop Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Motorcycle Workshop Checklist</h1>
+    </header>
+    <main>
+        <form id="checklist-form">
+            <section>
+                <h2>Bodywork</h2>
+                <label for="cleaning">Cleaning:</label>
+                <div class="options">
+                    <input type="radio" id="cleaning_g" name="cleaning" value="G">
+                    <label for="cleaning_g">G</label>
+                    <input type="radio" id="cleaning_f" name="cleaning" value="F">
+                    <label for="cleaning_f">F</label>
+                    <input type="radio" id="cleaning_p" name="cleaning" value="P">
+                    <label for="cleaning_p">P</label>
+                </div>
+                
+                <label for="scratches">Check for scratches or dents:</label>
+                <div class="options">
+                    <input type="radio" id="scratches_g" name="scratches" value="G">
+                    <label for="scratches_g">G</label>
+                    <input type="radio" id="scratches_f" name="scratches" value="F">
+                    <label for="scratches_f">F</label>
+                    <input type="radio" id="scratches_p" name="scratches" value="P">
+                    <label for="scratches_p">P</label>
+                </div>
+                
+                <label for="polish">Polish the motorcycle:</label>
+                <div class="options">
+                    <input type="radio" id="polish_g" name="polish" value="G">
+                    <label for="polish_g">G</label>
+                    <input type="radio" id="polish_f" name="polish" value="F">
+                    <label for="polish_f">F</label>
+                    <input type="radio" id="polish_p" name="polish" value="P">
+                    <label for="polish_p">P</label>
+                </div>
+                
+                <!-- Add more bodywork checklist items here -->
+            </section>
+            
+            <!-- Repeat for mechanical and electrical sections -->
+            
+            <button type="submit">Generate PDF</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    background-color: #eee;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

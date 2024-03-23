@@ -1,0 +1,134 @@
+.logo-container {
+    margin-right: 10%;
+    display: ruby-text;}
+.bodywork {
+    background-image: url('UNIQUE BIKE FINAL.jpg'); /* Replace with your image path */
+    padding: 40px;
+    color: #fff;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+header img {
+    width: 10%; /* Adjust width as needed */
+    height: auto;
+}
+@media print {
+    input[type="radio"]:checked + label::before {
+        content: '\2022'; /* Bullet point character */
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: #ff0000; /* Highlight color */
+        text-align: center;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+}
+input[type="radio"][value="P"]:checked + label {
+    background-color: #f00a0a;
+    color: #fff;
+}
+input[type="radio"][value="F"]:checked + label {
+    background-color: #ffb900;
+    color: #fff;
+}
+input[type="radio"][value="G"]:checked + label {
+    background-color: #00ff1d;
+    color: #fff;
+}
+.column {
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+}
+
+.options input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 100%;
+    display: ruby-text;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    background-color: #eee;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
