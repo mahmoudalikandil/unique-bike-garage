@@ -1,6 +1,6 @@
 textarea.comments-container{
     resize: both;
-    min-height: 100px;
+    min-height: 50px;
 }
 .comments-container{
 width: 99%;
