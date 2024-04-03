@@ -1,3 +1,10 @@
+textarea.comments-container{
+    resize: both;
+    min-height: 100px;
+}
+.comments-container{
+width: 99%;
+}
 .input-field{
     width: 100%;
 }
